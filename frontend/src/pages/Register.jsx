@@ -19,7 +19,7 @@ function Register() {
     try {
       setLoading(true);
 
- await axios.post(`${process.env.REACT_APP_API_URL}/register`, {
+ await axios.post(`${process.env.REACT_APP_API_URL}/api/register`, {
         name,
         email,
         password,

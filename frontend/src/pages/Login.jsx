@@ -22,7 +22,7 @@ function Login() {
       localStorage.removeItem("token");
       localStorage.removeItem("name");
 
-     const res = await axios.post(`${process.env.REACT_APP_API_URL}/login`, {
+     const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, {
         email,
         password,
       });
