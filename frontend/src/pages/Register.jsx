@@ -19,17 +19,11 @@ function Register() {
     try {
       setLoading(true);
 
-//  await axios.post(`${process.env.REACT_APP_API_URL}/api/register`, {
-//         name,
-//         email,
-//         password,
-//       });
-
-await axios.post("https://career-app-2-9zzo.onrender.com/api/register", {
-  name,
-  email,
-  password,
-});
+ await axios.post(`${process.env.REACT_APP_API_URL}/api/register`, {
+        name,
+        email,
+        password,
+      });
 
       alert("Registered successfully");
 
