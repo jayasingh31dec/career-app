@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Center container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #667eea, #5a67d8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Quiz options */
+.option-btn {
+  margin: 8px 0;
+  padding: 12px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+   color: #333; /* ✅ ADD THIS */
+  font-weight: 500; /* optional better look */
+  
+}
+
+.option-btn:hover {
+  background: #e0e7ff;
+}
+
+/* Selected */
+.selected {
+  background: #667eea !important;
+  color: white;
+  border: 1px solid #4c51bf;
+}
+
+/* Navigation */
+.nav-btns {
+  display: flex;
+  gap: 10px;
+}
+
+/* Progress bar */
+.progress {
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #667eea, #5a67d8);
+  transition: width 0.3s ease;
+}
+
+/* Result */
+.result-title {
+  color: #667eea;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.result-desc {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Score Box */
+.score-box {
+  background: linear-gradient(135deg, #eef2ff, #dbeafe);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.score-box p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
