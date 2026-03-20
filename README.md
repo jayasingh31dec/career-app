@@ -2,3 +2,5 @@
 my new project
 /
 "/*"
+
+lala
